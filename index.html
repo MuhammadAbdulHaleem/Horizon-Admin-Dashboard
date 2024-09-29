@@ -8,7 +8,7 @@
     <link rel="icon" href="https://cdn.icon-icons.com/images/favicon.ico" type="image/x-icon">
 
     <!-- CSS links Start-->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- CSS links End -->
 
@@ -94,12 +94,13 @@
                         </div>
                         <div class="col-6 d-flex align-items-center justify-content-end pe-5">
                             <div class="d-flex align-items-center justify-content-center gap-2 misc">
-                                <div class="dashboard-search"><img src="images/Search Icon.svg"><input type="search"
+                                <div class="dashboard-search"><img type="button" src="images/Search Icon.svg"><input type="search"
                                         placeholder="Search"></div>
-                                <img src="images/notification.svg" alt="notification">
-                                <img src="images/moon-solid 1.svg" alt="moon">
-                                <img src="images/info_outline.svg" alt="info">
-                                <img src="images/Avatar.png" alt="Avatar">
+                                <img type="button" src="images/notification.svg" alt="notification">
+                                <img type="button" src="images/moon-solid 1.svg" alt="moon">
+                                <img type="button" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="tooltip"
+                                    title="This is an info" src="images/info_outline.svg" alt="info">
+                                <img type="button" src="images/Avatar.png" alt="Avatar">
                             </div>
                         </div>
                     </div>
@@ -109,7 +110,7 @@
 
                 <!-- ========== Section 1 Start ========== -->
                 <div class="row py-4 px-3">
-                    <div class="col-2">
+                    <div class="col-12 col-lg-2 col-md-4 col-sm-6">
                         <div class="card status-card card-1">
                             <img src="images/earning.svg" alt="earning">
                             <div>
@@ -118,7 +119,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-2">
+                    <div class="col-12 col-lg-2 col-md-4 col-sm-6">
                         <div class="card status-card card-2">
                             <img src="images/spend.svg" alt="spend">
                             <div>
@@ -127,7 +128,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-2">
+                    <div class="col-12 col-lg-2 col-md-4 col-sm-6">
                         <div class="card status-card card-3">
                             <div class="ps-4 pt-2">
                                 <h5 class="mb-1">Sales</h5>
@@ -139,7 +140,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-2">
+                    <div class="col-12 col-lg-2 col-md-4 col-sm-6">
                         <div
                             class="card status-card card-4 d-flex flex-row gap-4 align-items-center justify-content-center">
                             <div>
@@ -149,7 +150,7 @@
                             <img src="images/usa.svg" alt="">
                         </div>
                     </div>
-                    <div class="col-2">
+                    <div class="col-12 col-lg-2 col-md-4 col-sm-6">
                         <div class="card status-card card-5">
                             <img src="images/task.svg" alt="task">
                             <div>
@@ -158,7 +159,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-2">
+                    <div class="col-12 col-lg-2 col-md-4 col-sm-6">
                         <div class="card status-card card-6">
                             <img src="images/projects.svg" alt="projects">
                             <div>
@@ -183,7 +184,7 @@
                                     </div>
                                 </div>
                                 <div class="col-6 d-flex justify-content-end">
-                                    <img src="images/chart.svg" alt="chart">
+                                    <img type="button" src="images/chart.svg" alt="chart">
                                 </div>
                             </div>
                             <div class="row pt-4">
@@ -208,7 +209,7 @@
                                     <h2 class="ps-4">Weekly Revenue</h2>
                                 </div>
                                 <div class="col-6 d-flex justify-content-end">
-                                    <img src="images/chart.svg" alt="chart">
+                                    <img type="button" src="images/chart.svg" alt="chart">
                                 </div>
                             </div>
                             <div class="row p-3">
@@ -223,7 +224,7 @@
 
 
                 <!-- ========== Section 3 Start ========== -->
-                <div class="row p-3">
+                <div class="row py-4 px-3">
                     <div class="col-6">
                         <div class="card section-3-card">
                             <div class="row p-3">
@@ -231,7 +232,7 @@
                                     <h3 class="ps-4">Check Table</h3>
                                 </div>
                                 <div class="col-6 d-flex justify-content-end">
-                                    <img src="images/three-dots.svg" alt="more">
+                                    <img type="button" src="images/three-dots.svg" alt="more">
                                 </div>
                             </div>
                             <table class=" table table-borderless align-middle ">
@@ -306,10 +307,18 @@
                         <div class="card position-relative section-3-card">
                             <div class="row p-3">
                                 <div class="col-6 ">
-                                    <h4 class="ps-4">Your Pie Chart</h4>
+                                    <h4 class="ps-4">Pie Chart</h4>
                                 </div>
                                 <div class="col-6 d-flex justify-content-end">
-                                    <h5>Monthly</h5>
+                                    <div class="px-3 ">
+                                        <select class="form-select rounded-5" aria-label="Default select example">
+                                            <option selected>
+                                                <h5>Monthly</h5>
+                                            </option>
+                                            <option value="1">Yearly</option>
+                                        </select>
+                                    </div>
+
                                 </div>
                             </div>
                             <img class="section-3-pie-chart position-absolute" src="images/pie-chart.svg" alt="chart">
@@ -317,7 +326,7 @@
                                 <div>
                                     <div class="d-flex align-items-center justify-content-center">
                                         <img class="pie-info-dot" src="images/blue-dot.svg">
-                                        <h5>Your files</h5>                                        
+                                        <h5>Your files</h5>
                                     </div>
                                     <h3 class="ps-4 mb-0">63%</h3>
                                 </div>
@@ -325,7 +334,7 @@
                                 <div>
                                     <div class="d-flex align-items-center justify-content-center">
                                         <img class="pie-info-dot" src="images/aqua-dot.svg">
-                                        <h5>Your files</h5>                                        
+                                        <h5>Your files</h5>
                                     </div>
                                     <h3 class="ps-4 mb-0">63%</h3>
                                 </div>
@@ -335,6 +344,192 @@
                 </div>
                 <!-- ========== Section 3 End ========== -->
 
+                <!-- ========== Section 4 Start ========== -->
+                <div class="row py-1 px-3">
+                    <div class="col-6">
+                        <div class="card section-3-card section-4-card-1">
+                            <div class="row p-3">
+                                <div class="col-6 ">
+                                    <h3 class="ps-4">Complex Table</h3>
+                                </div>
+                                <div class="col-6 d-flex justify-content-end">
+                                    <img type="button" src="images/three-dots.svg" alt="more">
+                                </div>
+                            </div>
+                            <div class="ps-4">
+                                <table class=" table table-borderless align-middle ">
+                                    <thead>
+                                        <tr>
+                                            <th class="table-head">NAME</th>
+                                            <th class="table-head">STATUS</th>
+                                            <th class="table-head">DATE</th>
+                                            <th class="table-head">PROGRESS</th>
+                                        </tr>
+                                    </thead>
+
+                                    <tbody>
+                                        <tr>
+                                            <td>Horizon UI PRO</td>
+                                            <td><img src="images/check_circle.svg" alt=""> Approved</td>
+                                            <td>24.Jan.2021</td>
+                                            <td>
+                                                <div class="progress" role="progressbar" aria-label="Basic example"
+                                                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                                                    <div class="progress-bar" style="width: 60%"></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Horizon UI Free</td>
+                                            <td><img src="images/cancel.svg" alt=""> Disable</td>
+                                            <td>12.Jun.2021</td>
+                                            <td>
+                                                <div class="progress" role="progressbar" aria-label="Basic example"
+                                                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                                                    <div class="progress-bar" style="width: 85%"></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Weekly Update</td>
+                                            <td><img src="images/error.svg" alt=""> Error</td>
+                                            <td>5.Jan.2021</td>
+                                            <td>
+                                                <div class="progress" role="progressbar" aria-label="Basic example"
+                                                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                                                    <div class="progress-bar" style="width: 42%"></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Marketplace</td>
+                                            <td><img src="images/check_circle.svg" alt=""> Approved</td>
+                                            <td>17.Dec.2021</td>
+                                            <td>
+                                                <div class="progress" role="progressbar" aria-label="Basic example"
+                                                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                                                    <div class="progress-bar" style="width: 70%"></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card section-3-card">
+                            <div class="row p-3">
+                                <div class="col-6 ">
+                                    <div class="ps-2 d-flex"><input class="form-check-input me-2" type="checkbox"
+                                            checked>
+                                        <h3 class="section-4-card-2-title">Tasks</h3>
+                                    </div>
+                                </div>
+                                <div class="col-6 d-flex justify-content-end">
+                                    <img type="button" src="images/three-dots.svg" alt="more">
+                                </div>
+                            </div>
+                            <div>
+                                <ul class="list-unstyled pt-2 section-4-card-2-list">
+                                    <li class="m-0 pb-3">
+                                        <div class="row pb-1 px-3">
+                                            <div class="col-6 ">
+                                                <div class="ps-2 d-flex"><input class="form-check-input me-2"
+                                                        type="checkbox">
+                                                    <h3 class="section-4-card-2-title disable">Landing page</h3>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 d-flex justify-content-end">
+                                                <img type="button" src="images/drag_indicator.svg" alt="more">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="m-0 pb-3">
+                                        <div class="row pb-1 px-3">
+                                            <div class="col-6 ">
+                                                <div class="ps-2 d-flex"><input class="form-check-input me-2"
+                                                        type="checkbox" checked>
+                                                    <h3 class="section-4-card-2-title">Dashboard</h3>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 d-flex justify-content-end">
+                                                <img type="button" src="images/drag_indicator.svg" alt="more">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="m-0 pb-3">
+                                        <div class="row pb-1 px-3">
+                                            <div class="col-6 ">
+                                                <div class="ps-2 d-flex"><input class="form-check-input me-2"
+                                                        type="checkbox" checked>
+                                                    <h3 class="section-4-card-2-title">Mobile App</h3>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 d-flex justify-content-end">
+                                                <img type="button" src="images/drag_indicator.svg" alt="more">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="m-0 pb-3">
+                                        <div class="row pb-1 px-3">
+                                            <div class="col-6 ">
+                                                <div class="ps-2 d-flex"><input class="form-check-input me-2"
+                                                        type="checkbox">
+                                                    <h3 class="section-4-card-2-title disable">Illustrations</h3>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 d-flex justify-content-end">
+                                                <img type="button" src="images/drag_indicator.svg" alt="more">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="m-0 pb-3">
+                                        <div class="row pb-1 px-3">
+                                            <div class="col-6 ">
+                                                <div class="ps-2 d-flex"><input class="form-check-input me-2"
+                                                        type="checkbox" checked>
+                                                    <h3 class="section-4-card-2-title">Promotional</h3>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 d-flex justify-content-end">
+                                                <img type="button" src="images/drag_indicator.svg" alt="more">
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card position-relative section-3-card">
+                            <div class="d-flex align-items-center justify-content-center gap-4 py-3">
+                                <div>
+                                    <select class="rounded-5 py-2 px-3 fw-bold form-select"
+                                        aria-label="Default select example">
+                                        <option value="1">Jan</option>
+                                        <option value="2">Feb</option>
+                                        <option value="3">March</option>
+                                        <option value="4" selected>April</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <select class="rounded-5 py-2  form-select" aria-label="Default select example">
+                                        <option value="1" selected>2021</option>
+                                        <option value="2">2022</option>
+                                        <option value="3">2023</option>
+                                        <option value="4">2024</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div>
+                                <img class="full-calender" src="images/full-calender.svg" alt="calender">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ========== Section 4 End ========== -->
+
             </main>
             <!-- Main Dashboard End -->
 
@@ -343,8 +538,17 @@
     </div>
 
     <!-- Javascript links Start-->
-    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Javascript links  -->
+
+    <!-- javascript for tooltip -->
+    <script>
+        // Initialize tooltips
+        const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+        tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl);
+        });
+    </script>
 </body>
 
 </html>
